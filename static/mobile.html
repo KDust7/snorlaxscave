@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.9.1/browser/overlayscrollbars.browser.es6.min.js" integrity="sha512-chZL0lDIW31v1Ip6tSicC+aZh08OYCELTCOwhOqQ6dRYkJ/39nLzlNQNVdTTYnl37WTvN8W0hcsqn9eSr4CNaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.9.1/styles/overlayscrollbars.css" integrity="sha512-g4z2p+tZ19ItLJc8gN2oL7idby+WPtsaSdYkA5AKtsGjzxovfhn8Ozd4zF92otlg4wWwwnn+iPxlUKswZPHLTQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Snorlax's Cave brings your students the best learning methods and skills to help them be the best and most efficient at studying!" />
+  <title>Snorlax's Cave</title>
+  <meta name="image" content="/assets/img/newlogo.png">
+  <meta property="og:image" content="/assets/img/newlogo.png">
+  <link rel="icon" href="/assets/img/newlogo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <meta name="sps-bot" content="true">
+  <link rel="stylesheet" href="/assets/css/animations.css" />
+  <link rel="stylesheet" href="/assets/css/mobile.css" />
+  <script src="/assets/js/functions.js"></script>
+</head>
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <form class="proxyform">
+      <div data-m="bounce-down" data-m-duration="1">
+        <h1>Mobile Cave!</h1>
+        <form method="POST" autocomplete="off">
+          <input type="text" name="url" class="proxy" id="search" tag="searchbar" placeholder="Search the web!">
+          <script src="/assets/js/index.js"></script>
+          <script src="/uv/uv.handler.js"></script>
+          <script src="/uv/uv.bundle.js"></script>
+          <script src="/uv/uv.config.js"></script>
+        </form>
+      </div>
+<button class="btn" onclick="location.href='mobileapps.html'">APPS</button>
+<button class="btn2" onclick="location.href='mobilegames.html'">GAMES</button>
+<script src="/assets/js/disabledAboutBlank.js"></script>
+<script>
+  const visited = localStorage.getItem('visited');
+  if (!visited) {
+    Swal.fire({
+    title: "Welcome",
+    text: "Welcome to Snorlax's Cave! (version 3.2.1) mobile version. Use a computer for more features and better design.",
+    showClass: {
+      popup: `
+        animate__animated
+        animate__fadeInUp
+        animate__faster
+      `
+    },
+    hideClass: {
+      popup: `
+        animate__animated
+        animate__fadeOutDown
+        animate__faster
+      `
+    }
+  });
+    localStorage.setItem('visited', true);
+  }
+  </script>
+ 
+</body>
+</html>
